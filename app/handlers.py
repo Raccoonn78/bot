@@ -61,12 +61,12 @@ async def start_handler_weather(msg: Message):
         pass
     await bot.send_message( chat_id=msg.from_user.id,  
                            text=f'''
-Погода на сегодня: {datetime.datetime.today().year}-{datetime.datetime.today().month}-{datetime.datetime.today().day}
+Погода на сегодня 🤟: {datetime.datetime.today().year}-{datetime.datetime.today().month}-{datetime.datetime.today().day}
 Москва: {conditions}
 Температура сейчас: {temp}°C
 Минимальная температура на сегодня: {temp_min}°C
 Максимальная температура на сегодня: {temp_max}°C
-А если выйдешь на улицу то будет невероятно солнечно
+А если выйдешь на улицу то будет невероятно солнечно 💙
                             ''',
                         #    text=fmt.text(
                         #         fmt.text(fmt.hunderline("Погода на сегодня"), ": ", fmt.hbold(str(datetime.datetime.today()))),
