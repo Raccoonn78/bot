@@ -12,7 +12,6 @@ def logger_function(func):
             print(f"Несанкционированный доступ запрещен для {user_id}.")
             return
         
-        
         with open('loggs.csv', 'a', encoding='utf8', newline='') as csvfile:
                 fieldnames = ['action','id', 'first_name', 'last_name', 'username' , 'chat_instance']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
