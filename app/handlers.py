@@ -112,7 +112,7 @@ async def start_handler_free_tokens(msg: Message):
 async def start_handler_free_tokens(msg: Message):
     with open('logg.txt', 'a', encoding='utf-8') as f: f.write(f'НАЖАЛ кнопку balance Пользователь: {msg.from_user.full_name} с id {msg.from_user.id}\n')
     logging.info( f'НАЖАЛ кнопку balance Пользователь: {msg.from_user.full_name} с id {msg.from_user.id}'  )
-    await msg.answer('нет у тебя ничего', reply_markup=bb.menu)
+    await msg.answer('Будет позже', reply_markup=bb.menu)
 
 
 @router.callback_query(F.data == "website")

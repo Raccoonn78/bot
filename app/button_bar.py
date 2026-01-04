@@ -6,7 +6,7 @@ from aiogram.types.web_app_info import WebAppInfo
 
 menu = [
     [InlineKeyboardButton(text="🌤️ Погода", callback_data="weather"),
-    InlineKeyboardButton(text="💰 Баланс-хуянс", callback_data="balance")],
+    InlineKeyboardButton(text="🥋 Тренировка", callback_data="balance")],
 ]
 
 
